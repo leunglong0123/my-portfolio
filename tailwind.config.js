@@ -9,9 +9,8 @@ module.exports = {
     extend: {},
   },
   plugins: [
-    require('@tailwindcss/forms'),
-    require('prettier-plugin-tailwindcss'),
-    require('@tailwindcss/typography'),
+    'prettier-plugin-tailwindcss',
+    '@tailwindcss/typography',
   ],
 }
 
