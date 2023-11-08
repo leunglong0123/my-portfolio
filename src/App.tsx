@@ -1,6 +1,11 @@
 import React from 'react';
 import logo from './logo.svg';
+import NavBar from './components/Navbar';
 import './App.css';
+import Home from './pages/Home';
+import Projects from './pages/Projects';
+import Skills from './pages/Skills';
+import Contact from './pages/ContactMe';
 
 function App() {
   return (
@@ -18,6 +23,10 @@ function App() {
         >
           Learn React
         </a>
+        <Home></Home>
+        <Projects></Projects>
+        <Skills></Skills>
+        <Contact></Contact>
       </header>
     </div>
   );
