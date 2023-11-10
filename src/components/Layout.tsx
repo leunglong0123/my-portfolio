@@ -1,4 +1,4 @@
-import React, { useState, HTMLAttributes, useCallback } from 'react';
+import { HTMLAttributes } from 'react';
 import NavBar from './Navbar';
 
 interface NavbarProps extends HTMLAttributes<HTMLDivElement> {}
@@ -11,9 +11,9 @@ export interface navBarItem {
 export default function Layout(props: NavbarProps) {
   const navBarPage = [
     { name: 'Home', path: '/' },
-    { name: 'Projects', path: 'project' },
-    { name: 'Skills', path: 'skills' },
-    { name: 'contact', path: 'contact' },
+    { name: 'Projects', path: '#projects' },
+    { name: 'Skills', path: '#skills' },
+    { name: 'contact', path: '#contact' },
   ];
 
   return (

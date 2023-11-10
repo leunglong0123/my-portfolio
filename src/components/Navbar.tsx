@@ -1,7 +1,5 @@
 import React, { useState } from 'react';
 import MenuIcon from '../Icon/MenuIcon';
-import LogoutIcon from '../Icon/LogOutIcon';
-import LoginIcon from '../Icon/LoginIcon';
 import CrossIcon from '../Icon/CrossIcon';
 
 interface Page {
@@ -16,30 +14,26 @@ interface NavBarProps {
 }
 
 const NavBar: React.FC<NavBarProps> = ({ logo, pages, isCollapse = true }) => {
-  const [isLoading, setIsLoading] = useState(false);
   const [isMenuCollapse, setIsMenuCollapse] = useState(isCollapse);
 
   const toggleMenu = () => {
     setIsMenuCollapse((prev) => !prev);
   };
   return (
-    <nav className="relative z-50 flex h-auto justify-between bg-bg-dark">
+    <nav className="z-50 flex h-auto justify-center overflow-hidden fixed bg-slate-800 w-screen">
       <div className="mx-8 my-auto md:hidden">
         <button className="text-text-primary" onClick={toggleMenu}>
           <MenuIcon></MenuIcon>
         </button>
       </div>
-      <a href="/" className="mx-8 my-auto shrink-0 md:mx-16">
-        <img src={logo} alt="Logo" className="h-16" />
-      </a>
-      <div className="hidden space-x-10 justify-self-center md:flex">
+      <div className="hidden md:flex md:justify-center">
         {pages.map((page, index) => (
           <div
             key={`${page.name}-${index}`}
-            className="inline-flex flex-col items-center justify-start gap-8 pb-9"
+            className="hover:bg-slate-600 w-auto p-4"
           >
             <a href={page.path}>
-              <h3>{page.name}</h3>
+              <h3 className="text-slate-300">{page.name}</h3>
             </a>
           </div>
         ))}
@@ -53,7 +47,7 @@ const NavBar: React.FC<NavBarProps> = ({ logo, pages, isCollapse = true }) => {
         }`}
         aria-label="Sidebar"
       >
-        <div className="flex h-full flex-col overflow-y-auto bg-gray-50 dark:bg-gray-800">
+        <div className="flex h-full flex-col overflow-y-auto ">
           <button
             className="m-8 ml-auto text-text-primary"
             onClick={() => setIsMenuCollapse(true)}
