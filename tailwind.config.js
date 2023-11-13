@@ -12,5 +12,13 @@ module.exports = {
     'prettier-plugin-tailwindcss',
     '@tailwindcss/typography',
   ],
+  theme: {
+    screens: {
+      sm: '400px',
+      md: '768px',
+      lg: '976px',
+      xl: '1440px',
+    },
+  }
 }
 
