@@ -25,7 +25,7 @@ const Contact: React.FC = () => {
               href="https://www.linkedin.com/in/your-linkedin-profile"
               className="text-blue-500 hover:underline"
               target="_blank"
-              rel="noopener noreferrer"
+              rel="noreferrer"
             >
               LinkedIn
             </a>

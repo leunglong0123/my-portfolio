@@ -25,6 +25,7 @@ const Projects: React.FC = () => {
             href="https://ai.creatogether.app"
             className="text-blue-400"
             target="_blank"
+            rel="noreferrer"
           >
             <div className="m-4 text-xl">
               <p className="w-auto md:text-sm">Click to view</p>
@@ -41,6 +42,7 @@ const Projects: React.FC = () => {
             href="https://ai.creatogether.app"
             className="text-blue-400"
             target="_blank"
+            rel="noreferrer"
           >
             <div className="m-4 text-xl">
               <p className="w-auto md:text-sm">Click to view</p>

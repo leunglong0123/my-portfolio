@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import Home from './pages/Home';
 import Projects from './pages/Projects';
 import Skills from './pages/Skills';
