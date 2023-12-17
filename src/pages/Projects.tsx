@@ -16,7 +16,7 @@ const Projects: React.FC = () => {
       </div>
       <div className="flex flex-wrap justify-evenly gap-4 md:flex-col md:items-center">
         <Card
-          className=""
+          className="bg-white"
           title="Creato Lens"
           coverImage="/creatogether.png"
           description="Creato Lens provides AI-driven insights for creatives to make informed decisions in creating content. It is a state of the art AI tool that helps you to generate hashtags that is more engaging and relevant to your audience. It will help content creators to gain more exposures and reach more audience."
@@ -32,6 +32,7 @@ const Projects: React.FC = () => {
           </a>
         </Card>
         <Card
+          className="bg-white"
           title="Facebook Clone"
           coverImage="/facebook-clone.png"
           description="Facebook clone with core features of the platform, users, profiles, friending, posts, comments, news feed, and liking. Sign-in function using Firebase."

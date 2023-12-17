@@ -180,7 +180,14 @@ const Experience: React.FC = () => {
           ))}
         </div>
       ),
-      technologies: ['Jupyter Lab', 'GCP', 'Python', 'Flask'],
+      technologies: [
+        'Next JS',
+        'React JS',
+        'Jupyter Lab',
+        'GCP',
+        'Python',
+        'Flask',
+      ],
     },
     {
       title: 'Frontend Developer',
@@ -198,7 +205,7 @@ const Experience: React.FC = () => {
           ))}
         </div>,
       ],
-      technologies: ['Jupyter Lab', 'GCP', 'Python', 'Flask'],
+      technologies: ['React Js', 'Gatsby JS', '.NET Core', 'SSMS', 'Azure'],
     },
   ];
 
@@ -225,7 +232,7 @@ const Experience: React.FC = () => {
             >
               {position.responsibilities}
             </ul>
-            <div className="flex flex-wrap gap-2 mt-2">
+            <div className="flex flex-wrap gap-2 mt-2 self-end">
               {position.technologies.map((technology, index) => (
                 <span
                   key={index + technology}

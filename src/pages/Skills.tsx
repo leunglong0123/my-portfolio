@@ -1,6 +1,5 @@
 // Home.tsx
 import React from 'react';
-import Card from '../components/Card';
 
 const Skills: React.FC = () => {
   const data = [
@@ -178,7 +177,9 @@ const Skills: React.FC = () => {
               <a href={e.a} className="h-auto w-10 md:w-14 inline-block">
                 <img src={e.img} alt={e.name} className="mx-auto" />
               </a>
-              <div className="text-xs whitespace-nowrap">{e.name}</div>
+              <div className="text-xs font-bold whitespace-nowrap">
+                {e.name}
+              </div>
             </div>
           ))}
         </div>

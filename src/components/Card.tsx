@@ -27,7 +27,7 @@ export default function Card(props: CardProps) {
       {coverImage ? (
         <img
           alt="coverImage"
-          className="h-fit w-auto md:shrink-0 md:h-auto md:w-64 md:object-cover"
+          className="h-fit w-auto md:shrink-0 md:h-auto md:w-64 md:object-cover border-r border-black"
           src={coverImage}
         />
       ) : null}
