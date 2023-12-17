@@ -20,20 +20,28 @@ const NavBar: React.FC<NavBarProps> = ({ logo, pages, isCollapse = true }) => {
     setIsMenuCollapse((prev) => !prev);
   };
   return (
-    <nav className="z-50 flex h-auto flex-row overflow-hidden fixed bg-tertiary shadow-lg w-screen">
+    <nav className="z-50 flex h-auto flex-row overflow-hidden fixed bg-tertiary shadow-lg w-screen bg-white">
       <div className="my-auto md:hidden items-start">
         <button className="text-text-primary" onClick={toggleMenu}>
           <MenuIcon></MenuIcon>
         </button>
       </div>
-      <div className="hidden md:flex md:justify-center">
+      <div className="hidden md:flex md:justify-center w-full py-1">
         {pages.map((page, index) => (
           <div key={`${page.name}-${index}`} className="w-auto p-4">
             <a href={page.path}>
-              <h3 className="text-slate-300">{page.name}</h3>
+              <h3 className="text-black font-bold">{page.name}</h3>
             </a>
           </div>
         ))}
+        <a download="Bryan_Leung_resumes.pdf" href="/resume.pdf">
+          <div
+            key={`resume`}
+            className="w-auto p-4 h-auto hover:bg-black border-black border rounded-md text-black hover:text-white "
+          >
+            <h3 className="font-bold">Resume</h3>
+          </div>
+        </a>
       </div>
       <aside
         id="default-sidebar"

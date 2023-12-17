@@ -203,7 +203,7 @@ const Experience: React.FC = () => {
   ];
 
   return (
-    <div className="py-4 h-auto min-h-[100vh] flex flex-col items-center justify-center bg-gradient-to-b bg-white from-white to-gray-200 space-y-4">
+    <div className="py-4 h-auto min-h-[100vh] flex flex-col items-center justify-center bg-gray-200 space-y-4">
       <div className="flex flex-col items-center">
         <h2 className="text-4xl font-bold text-center py-8">Experience</h2>
       </div>

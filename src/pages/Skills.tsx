@@ -164,17 +164,17 @@ const Skills: React.FC = () => {
   ];
 
   return (
-    <section
-      className="py-16 bg-gradient-to-b bg-white from-white to-gray-200"
+    <div
+      className="w-auto h-auto min-h-screen flex flex-col items-center py-16 bg-gradient-to-t bg-white from-gray-200 to-white"
       id="skills"
     >
       <div className="container mx-auto text-center">
-        <h2 className="text-4xl font-bold">Skills</h2>
+        <h2 className="text-4xl font-bold py-16">Skills</h2>
       </div>
       <div className="md:mx-auto block w-80 md:w-2/3">
         <div className="flex flex-wrap justify-center items-center gap-6 md:gap-1">
-          {data.map((e: any) => (
-            <div className="text-center md:p-4">
+          {data.map((e: any, index) => (
+            <div className="text-center md:p-4" key={e.name + index}>
               <a href={e.a} className="h-auto w-10 md:w-14 inline-block">
                 <img src={e.img} alt={e.name} className="mx-auto" />
               </a>
@@ -183,7 +183,7 @@ const Skills: React.FC = () => {
           ))}
         </div>
       </div>
-    </section>
+    </div>
   );
 };
 
