@@ -13,7 +13,6 @@ export default function Card(props: CardProps) {
   const {
     title,
     children,
-    extra,
     className,
     coverImage,
     subExtra,
@@ -22,19 +21,24 @@ export default function Card(props: CardProps) {
   } = props;
   return (
     <div
-      className={`flex h-fit w-80 flex-col gap-6 rounded-xl border border-slate-300 p-6 shadow-lg md:w-96 ${className}`}
+      className={`flex h-auto w-80 flex-col md:flex-row gap-6 md:w-8/12 border border-slate-500 ${className}`}
     >
       {/* <div className="absolute top-0 right-0 px-6 py-6">{extra}</div> */}
       {coverImage ? (
         <img
-          className="h-auto w-auto rounded-xl md:shrink-0"
+          alt="coverImage"
+          className="h-fit w-auto md:shrink-0 md:h-auto md:w-64 md:object-cover"
           src={coverImage}
         />
       ) : null}
       {subExtra ? <div className="h-auto w-auto">{subExtra}</div> : null}
-      <div>
-        <h1>{title}</h1>
-        {description ? <div>{description}</div> : null}
+      <div className="md:flex md:flex-col md:justify-between">
+        <h1 className="text-3xl md:text-xl font-bold text-left mx-4 md:my-4 md:mx-4">
+          {title}
+        </h1>
+        {description ? (
+          <div className="text-left m-4 text-sm md:text-xs">{description}</div>
+        ) : null}
         {children}
       </div>
       {onClick ? <button className="h-auto self-center">text</button> : null}

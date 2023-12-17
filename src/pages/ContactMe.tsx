@@ -2,7 +2,10 @@ import React from 'react';
 
 const Contact: React.FC = () => {
   return (
-    <section className="py-16" id="contact">
+    <section
+      className="py-16 h-screen flex flex-col justify-center"
+      id="contact"
+    >
       <div className="container mx-auto text-center">
         <h2 className="text-3xl font-bold">Contact Me</h2>
         <p className="mt-4 text-lg">
@@ -11,10 +14,10 @@ const Contact: React.FC = () => {
         </p>
         <div className="mt-8">
           <a
-            href="mailto:your-email@example.com"
+            href="mailto:leunglong2000.ca@gmail.com"
             className="text-blue-500 hover:underline"
           >
-            Email: your-email@example.com
+            Email: leunglong2000.ca@gmail.com
           </a>
           <p className="mt-2">
             Connect with me on{' '}

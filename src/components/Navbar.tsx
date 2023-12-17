@@ -20,29 +20,24 @@ const NavBar: React.FC<NavBarProps> = ({ logo, pages, isCollapse = true }) => {
     setIsMenuCollapse((prev) => !prev);
   };
   return (
-    <nav className="z-50 flex h-auto justify-center overflow-hidden fixed bg-slate-800 w-screen">
-      <div className="mx-8 my-auto md:hidden">
+    <nav className="z-50 flex h-auto flex-row overflow-hidden fixed w-screen bg-white">
+      <div className="my-auto md:hidden items-start">
         <button className="text-text-primary" onClick={toggleMenu}>
           <MenuIcon></MenuIcon>
         </button>
       </div>
       <div className="hidden md:flex md:justify-center">
         {pages.map((page, index) => (
-          <div
-            key={`${page.name}-${index}`}
-            className="hover:bg-slate-600 w-auto p-4"
-          >
+          <div key={`${page.name}-${index}`} className="w-auto p-4">
             <a href={page.path}>
               <h3 className="text-slate-300">{page.name}</h3>
             </a>
           </div>
         ))}
       </div>
-      <div className="m-8 md:hidden"></div>
-      <div className="m-6 my-auto hidden md:flex"></div>
       <aside
         id="default-sidebar"
-        className={`fixed z-40 h-screen w-screen -translate-x-full transition-transform sm:translate-x-0 ${
+        className={`fixed z-40 h-screen w-screen -translate-x-full transition-transform sm:translate-x-0 bg-white ${
           isMenuCollapse ? 'hidden' : 'block'
         }`}
         aria-label="Sidebar"
