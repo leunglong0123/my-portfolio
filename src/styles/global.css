@@ -5,7 +5,7 @@
 
 @layer base {
   body {
-    @apply content-center antialiased font-montserrat px-4;
+    @apply content-center antialiased font-montserrat;
   }
 
   a {

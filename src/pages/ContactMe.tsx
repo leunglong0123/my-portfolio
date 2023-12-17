@@ -3,7 +3,7 @@ import React from 'react';
 const Contact: React.FC = () => {
   return (
     <section
-      className="py-16 h-screen flex flex-col justify-center"
+      className="py-16 h-[50vh] flex flex-col justify-center"
       id="contact"
     >
       <div className="container mx-auto text-center">

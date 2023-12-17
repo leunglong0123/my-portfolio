@@ -20,7 +20,7 @@ const NavBar: React.FC<NavBarProps> = ({ logo, pages, isCollapse = true }) => {
     setIsMenuCollapse((prev) => !prev);
   };
   return (
-    <nav className="z-50 flex h-auto flex-row overflow-hidden fixed w-screen bg-white">
+    <nav className="z-50 flex h-auto flex-row overflow-hidden fixed bg-tertiary shadow-lg w-screen">
       <div className="my-auto md:hidden items-start">
         <button className="text-text-primary" onClick={toggleMenu}>
           <MenuIcon></MenuIcon>

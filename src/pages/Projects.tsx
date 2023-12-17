@@ -5,7 +5,7 @@ import Card from '../components/Card';
 const Projects: React.FC = () => {
   return (
     <div
-      className="w-auto h-auto min-h-screen flex flex-col items-center py-16 "
+      className="w-auto h-auto min-h-screen flex flex-col items-center py-16 bg-gradient-to-b bg-white from-gray-200 to-white"
       id="projects"
     >
       <div className="flex flex-col py-16">
@@ -16,6 +16,7 @@ const Projects: React.FC = () => {
       </div>
       <div className="flex flex-wrap justify-evenly gap-4 md:flex-col md:items-center">
         <Card
+          className=""
           title="Creato Lens"
           coverImage="/creatogether.png"
           description="Creato Lens provides AI-driven insights for creatives to make informed decisions in creating content. It is a state of the art AI tool that helps you to generate hashtags that is more engaging and relevant to your audience. It will help content creators to gain more exposures and reach more audience."
