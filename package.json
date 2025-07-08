@@ -10,6 +10,7 @@
     "@types/node": "^16.18.61",
     "@types/react": "^18.2.37",
     "@types/react-dom": "^18.2.15",
+    "@vercel/analytics": "^1.5.0",
     "autoprefixer": "^10.4.16",
     "postcss-cli": "^10.1.0",
     "react": "^18.2.0",
