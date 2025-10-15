@@ -14,10 +14,10 @@ const Contact: React.FC = () => {
         </p>
         <div className="mt-8">
           <a
-            href="mailto:leunglong2000.ca@gmail.com"
+            href="mailto:kalong.leung0123@gmail.com"
             className="text-blue-500 hover:underline"
           >
-            Email: leunglong2000.ca@gmail.com
+            Email: kalong.leung0123@gmail.com
           </a>
           <p className="mt-2">
             Connect with me on{' '}

@@ -24,83 +24,80 @@ const Experience: React.FC = () => {
     {
       segments: [
         {
-          text: `Designed and maintained scalable pipelines in `,
+          text: 'Developed ',
+        },
+        { text: 'social media scraping pipeline', isStrong: true },
+        {
+          text: ' in ',
         },
         { text: 'microservice architecture', isStrong: true },
         {
-          text: ' for social media platform ',
+          text: ' on cloud platform ',
         },
-        { text: 'data scraping', isStrong: true },
+        { text: '(AWS/GCP)', isStrong: true },
         {
-          text: ' in startup, ensuring efficient and reliable data extraction.',
+          text: ' to deliver high reliability services, accumulated for more than ',
+        },
+        { text: '5 million records', isStrong: true },
+        {
+          text: ' including textual and image data.',
         },
       ],
     },
     {
       segments: [
         {
-          text: 'Performed ',
+          text: 'Built and maintained ',
         },
-        { text: 'ETL operations', isStrong: true },
+        { text: 'full-stack applications', isStrong: true },
+        {
+          text: ' featuring a ',
+        },
+        { text: 'Next.js analytics dashboard', isStrong: true },
+        {
+          text: ' with ',
+        },
+        { text: 'Tailwind CSS', isStrong: true },
+        {
+          text: ' for marketing agencies, transforming raw scraped data into actionable insights for campaign optimization and influencer performance tracking.',
+        },
+      ],
+    },
+    {
+      segments: [
+        {
+          text: 'Automated ',
+        },
+        { text: 'event campaign reporting workflows', isStrong: true },
         {
           text: ' using ',
         },
-        { text: 'Jupyter Notebook', isStrong: true },
+        { text: 'n8n', isStrong: true },
         {
-          text: ' and integrated ',
+          text: ', generating PowerPoint slides for marketing agencies and reducing manual screen-capture tasks from ',
         },
-        { text: 'deep learning models', isStrong: true },
+        { text: 'hours to minutes', isStrong: true },
         {
-          text: ' to predict trends based on social media data extracted from the pipeline.',
-        },
-      ],
-    },
-    {
-      segments: [
-        {
-          text: 'Developed ',
-        },
-        { text: 'user-friendly CMS', isStrong: true },
-        {
-          text: ' to monitor and control the data scraping process, enhancing visibility and management.',
+          text: ', streamlining client deliverables and enhancing operational efficiency.',
         },
       ],
     },
     {
       segments: [
         {
-          text: 'Built multiple cloud services in ',
+          text: 'Implemented ',
         },
-        { text: 'GCP', isStrong: true },
+        { text: 'event-driven workflows', isStrong: true },
         {
-          text: ', leveraging technologies such as ',
+          text: ' with ',
         },
-        { text: 'Cloud Functions', isStrong: true },
-        { text: ', ', isStrong: false },
-        { text: 'Cloud Run', isStrong: true },
-        { text: ', ', isStrong: false },
-        { text: 'Kubernetes', isStrong: true },
-        { text: ', ', isStrong: false },
-        { text: 'Pub/Sub', isStrong: true },
-        { text: ', ', isStrong: false },
-        { text: 'Cloud Storage', isStrong: true },
-        { text: ', ', isStrong: false },
-        { text: 'BigQuery', isStrong: true },
-        { text: ', ', isStrong: false },
-        { text: 'Vision API', isStrong: true },
-        { text: ', and ', isStrong: false },
-        { text: 'Vertex AI', isStrong: true },
-        { text: '.' },
-      ],
-    },
-    {
-      segments: [
-        { text: 'Created ' },
-        { text: 'RESTful APIs', isStrong: true },
-        { text: ' using ' },
-        { text: 'Python Flask', isStrong: true },
+        { text: 'AWS SQS/SNS', isStrong: true },
         {
-          text: ', integrating multiple cloud services and implementing a notification system to provide service status updates, following the repository pattern.',
+          text: ' and ',
+        },
+        { text: 'GCP Pub/Sub', isStrong: true },
+        {
+          text: ' to stream data efficiently across distributed systems.',
         },
       ],
     },
@@ -183,10 +180,12 @@ const Experience: React.FC = () => {
       technologies: [
         'Next JS',
         'React JS',
-        'Jupyter Lab',
+        'Tailwind CSS',
+        'AWS',
         'GCP',
         'Python',
         'Flask',
+        'n8n',
       ],
     },
     {
